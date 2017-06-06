@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>注册</title>
+    <meta name="viewport"content="width=device-width,initial-scale=1,maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../css/reqister.css">
+</head>
+<body>
+    <div class="fixed"></div>
+    <header class="sonheader">
+        <i>&#xe61f;</i>
+        <span>注册</span>
+    </header>
+    <div class="soninput">
+        <div class="phone">
+            <input type="text" placeholder="请输入正确的手机号码">
+            <div class="move">
+                <i>&#xe616;</i>
+                <div class="mes" alt='0'>
+                    <a></a>
+                    <span name='0'>发送验证码到手机</span>
+                </div>
+            </div>
+        </div>
+        <div class="psd hide">
+            <input type="text" onkeypress="return event.keyCode>=48&&event.keyCode<=57" placeholder="输入短信验证码" name='0'>
+            <i>&#xe616;</i>
+        </div>
+        <div class="psd show">
+            <input type="password" placeholder="设置密码" onkeypress="return event.keyCode!=32" name='0'>
+            <i name='0'>&#xe6a4;</i>
+        </div>
+        <div class="yes">
+            <label name='0'>
+                <i></i>
+                <span>同意</span>
+            </label>
+            <a href="">《卖座网服务协议》</a>
+            <a href="" class="right">快捷登录</a>
+        </div>
+        <button type="" disabled="">
+            <a>立即注册</a>
+        </button>
+    </div>
+</body>
+</html>
+<script src='../js/jquery.min.js'></script>
+<script src='../js/reqister.js'></script>

@@ -1,0 +1,176 @@
+body,h1,span,a,div,ul,li,b,i,menu,nav,header,footer,p{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,.ppt,.con.footer{
+  min-width: 200px;
+}
+
+html,body{
+    height: 100%;
+    font-family: 'Microsoft YaHei';
+    font-size: 125%;
+    overflow-x: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+a,a:visited,a:hover{
+    text-decoration: none;
+    background: none;
+}
+
+ul,li{
+    list-style-type: none;
+}
+
+menu li{
+  cursor: pointer;
+}
+
+button,input{
+  border: none;
+  outline: none;
+  background: none;
+}
+
+button{
+  cursor: pointer;
+}
+
+i{
+    font-family: 'iconfont';
+    font-style: normal;
+    background: none;
+}
+
+@mixin font($font1,$color: #595959){
+    font-size: $font1 + px;
+    font-size: $font1/20 + rem;
+    color: $color;
+}
+
+@mixin flex($content: space-around,$center: center){
+  display: flex;
+  display: -ms-flex;
+  display: -webkit-flex;
+  justify-content: $content;
+  -webkit-justify-content: $content;
+  align-items: $center;
+  -webkit-align-items: $center;
+}
+
+@mixin radius($px){
+  border-radius: $px;
+  -o-border-radius: $px;
+  -ms-border-radius: $px;
+  -moz-border-radius: $px;
+  -webkit-border-radius: $px;
+}
+
+@media screen and (max-width:560px){
+   html,body{
+    font-size: 109.375%;
+   }
+}
+
+@media screen and (max-width:480px){
+   html,body{
+    font-size: 93.75%;
+   }
+}
+
+@media screen and (max-width:400px){
+   html,body{
+    font-size: 78.125%;
+   }
+}
+
+@media screen and (max-width:320px){
+   html,body{
+    font-size: 62.5%;
+   }
+}
+
+.sonheader{
+    width: 100%;
+    line-height: 4.45rem;
+    overflow: hidden;
+    border-bottom: 1px solid #d7d7d7;
+    background: #fff;
+    i,span{
+        margin-left: 0.5rem;
+    }
+    i{
+        float: left;
+        cursor: pointer;
+        @include font(38,#18b3cf);
+    }
+    span{
+        float: left;
+        margin-top: -0.1rem;
+        @include font(28);
+    }
+}
+
+.soninput{
+  width: 27.35rem;
+  margin: 0 auto;
+  padding-top: 4.2rem;
+  .phone,.psd{
+      height: 2.8rem;
+      border-bottom: 1px solid #d7d7d7;
+      input{
+          width: 90%;
+          height: 100%;
+          @include font(25,#000);
+      }
+  }
+  .psd{
+      margin-top: 2.7rem;
+      i{
+        cursor: pointer;
+        display: none;
+      }
+  }
+  .yes{
+    margin-top: 1rem;
+    label{
+      cursor: pointer;
+    }
+    a{
+        @include font(25,#f7b082);
+    }
+  }
+  button{
+      display: block;
+      width: 15rem;
+      height: 3.65rem;
+      margin: 5rem auto 0;
+      @include radius(2rem);
+      background: #d8d8d8;
+      a{
+          @include font(30,#fff);
+      }
+  }
+}
+
+.fixed{
+    width: 15rem;
+    height: 3rem;
+    line-height: 3rem;
+    background: rgba(102,102,102,0.7);
+    text-align: center;
+    @include font(24,#fff);
+    @include radius(1rem);
+    position: fixed;
+    top: 400px;
+    left: 50%;
+    z-index: 20;
+    margin-left: -7.5rem;
+    display: none;
+}

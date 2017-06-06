@@ -1,0 +1,202 @@
+@import url(iconfont.css);
+body, h1, span, a, div, ul, li, b, i, menu, nav, header, footer, p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+header, .ppt, .con.footer {
+  min-width: 200px; }
+
+html, body {
+  height: 100%;
+  font-family: 'Microsoft YaHei';
+  font-size: 125%;
+  overflow-x: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+a, a:visited, a:hover {
+  text-decoration: none;
+  background: none; }
+
+ul, li {
+  list-style-type: none; }
+
+menu li {
+  cursor: pointer; }
+
+button, input {
+  border: none;
+  outline: none;
+  background: none; }
+
+button {
+  cursor: pointer; }
+
+i {
+  font-family: 'iconfont';
+  font-style: normal;
+  background: none; }
+
+@media screen and (max-width: 560px) {
+  html, body {
+    font-size: 109.375%; } }
+@media screen and (max-width: 480px) {
+  html, body {
+    font-size: 93.75%; } }
+@media screen and (max-width: 400px) {
+  html, body {
+    font-size: 78.125%; } }
+@media screen and (max-width: 320px) {
+  html, body {
+    font-size: 62.5%; } }
+.sonheader {
+  width: 100%;
+  line-height: 4.45rem;
+  overflow: hidden;
+  border-bottom: 1px solid #d7d7d7;
+  background: #fff; }
+  .sonheader i, .sonheader span {
+    margin-left: 0.5rem; }
+  .sonheader i {
+    float: left;
+    cursor: pointer;
+    font-size: 38px;
+    font-size: 1.9rem;
+    color: #18b3cf; }
+  .sonheader span {
+    float: left;
+    margin-top: -0.1rem;
+    font-size: 28px;
+    font-size: 1.4rem;
+    color: #595959; }
+
+.soninput {
+  width: 27.35rem;
+  margin: 0 auto;
+  padding-top: 4.2rem; }
+  .soninput .phone, .soninput .psd {
+    height: 2.8rem;
+    border-bottom: 1px solid #d7d7d7; }
+    .soninput .phone input, .soninput .psd input {
+      width: 90%;
+      height: 100%;
+      font-size: 25px;
+      font-size: 1.25rem;
+      color: #000; }
+  .soninput .psd {
+    margin-top: 2.7rem; }
+    .soninput .psd i {
+      cursor: pointer;
+      display: none; }
+  .soninput .yes {
+    margin-top: 1rem; }
+    .soninput .yes label {
+      cursor: pointer; }
+    .soninput .yes a {
+      font-size: 25px;
+      font-size: 1.25rem;
+      color: #f7b082; }
+  .soninput button {
+    display: block;
+    width: 15rem;
+    height: 3.65rem;
+    margin: 5rem auto 0;
+    border-radius: 2rem;
+    -o-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    background: #d8d8d8; }
+    .soninput button a {
+      font-size: 30px;
+      font-size: 1.5rem;
+      color: #fff; }
+
+.fixed {
+  width: 15rem;
+  height: 3rem;
+  line-height: 3rem;
+  background: rgba(102, 102, 102, 0.7);
+  text-align: center;
+  font-size: 24px;
+  font-size: 1.2rem;
+  color: #fff;
+  border-radius: 1rem;
+  -o-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  position: fixed;
+  top: 400px;
+  left: 50%;
+  z-index: 20;
+  margin-left: -7.5rem;
+  display: none; }
+
+.soninput {
+  width: 27.35rem;
+  margin: 0 auto;
+  padding-top: 4.2rem; }
+  .soninput .phone {
+    position: relative;
+    overflow: hidden; }
+    .soninput .phone i {
+      line-height: 2.8rem;
+      margin: 0 0.5rem;
+      color: #595959;
+      cursor: pointer;
+      display: none; }
+    .soninput .phone .move {
+      height: 2.4rem;
+      margin-top: 0.2rem;
+      position: absolute;
+      border-bottom: none;
+      top: 0;
+      right: 0; }
+      .soninput .phone .move .mes {
+        width: 10rem;
+        height: 2.4rem;
+        float: right;
+        border-bottom: none; }
+        .soninput .phone .move .mes a {
+          float: left;
+          width: 0;
+          height: 0;
+          margin: 0.62rem -0.1rem 0 0;
+          border-top: 0.5rem solid transparent;
+          border-right: 0.5rem solid #36bfd1;
+          border-bottom: 0.5rem solid transparent; }
+        .soninput .phone .move .mes span {
+          float: left;
+          cursor: pointer;
+          width: 9.5rem;
+          line-height: 2.4rem;
+          text-align: center;
+          background: #36bfd1;
+          border-radius: 0.5rem;
+          -o-border-radius: 0.5rem;
+          -ms-border-radius: 0.5rem;
+          -moz-border-radius: 0.5rem;
+          -webkit-border-radius: 0.5rem;
+          font-size: 20px;
+          font-size: 1rem;
+          color: #fff; }
+  .soninput .yes span {
+    font-size: 25px;
+    font-size: 1.25rem;
+    color: #595959; }
+  .soninput .yes i {
+    float: left;
+    width: 1.9rem;
+    height: 1.9rem;
+    line-height: 1.9rem;
+    margin-right: 0.5rem;
+    text-align: center;
+    border: 1px solid #ccc; }
+  .soninput .right {
+    float: right; }
+
+/*# sourceMappingURL=reqister.css.map */

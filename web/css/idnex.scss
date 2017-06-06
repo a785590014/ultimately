@@ -1,0 +1,85 @@
+@import 'public.scss';
+@import 'iconfont.css';
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    nav{
+        height: 4.8rem;
+        .logo{
+            width: 12.4rem;
+            float: left;
+        }
+        .city{
+            float: right;
+            line-height: 4.8rem;
+            margin-right: 0.8rem;
+            span{
+                float: left;
+                @include font(24);
+            }
+            i{
+                float: right;
+                @include font(40,deepskyblue);
+                margin-top: -0.2rem;
+            }
+        }
+    }
+    menu{
+        width: 100%;
+        height: 3.1rem;
+        @include flex();
+        li{
+            width: 4.8rem;
+            @include font(24);
+        }
+    }
+}
+
+.info{
+    height: 8.26rem;
+}
+
+.ppt{
+    width: 100%;
+    position: relative;
+    .allpic{
+        position: absolute;
+        top: 0;
+        left: 0;
+        .pic{
+            float: left;
+        }
+    }
+}
+
+.con{
+    height: 14rem;
+}
+
+footer{
+    width: 100%;
+    height: 5.4rem;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    menu{
+        height: 100%;
+        @include flex();
+        li{
+            i{
+                display: block;
+                @include font(48);
+            }
+            p{
+                width: 2.4rem;
+                text-align: center;
+                @include font(20);
+            }
+        }
+    }
+}

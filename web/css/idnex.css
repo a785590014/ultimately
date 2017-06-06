@@ -1,0 +1,225 @@
+@import url(iconfont.css);
+body, h1, span, a, div, ul, li, b, i, menu, nav, header, footer, p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+header, .ppt, .con.footer {
+  min-width: 200px; }
+
+html, body {
+  height: 100%;
+  font-family: 'Microsoft YaHei';
+  font-size: 125%;
+  overflow-x: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+a, a:visited, a:hover {
+  text-decoration: none;
+  background: none; }
+
+ul, li {
+  list-style-type: none; }
+
+menu li {
+  cursor: pointer; }
+
+button, input {
+  border: none;
+  outline: none;
+  background: none; }
+
+button {
+  cursor: pointer; }
+
+i {
+  font-family: 'iconfont';
+  font-style: normal;
+  background: none; }
+
+@media screen and (max-width: 560px) {
+  html, body {
+    font-size: 109.375%; } }
+@media screen and (max-width: 480px) {
+  html, body {
+    font-size: 93.75%; } }
+@media screen and (max-width: 400px) {
+  html, body {
+    font-size: 78.125%; } }
+@media screen and (max-width: 320px) {
+  html, body {
+    font-size: 62.5%; } }
+.sonheader {
+  width: 100%;
+  line-height: 4.45rem;
+  overflow: hidden;
+  border-bottom: 1px solid #d7d7d7;
+  background: #fff; }
+  .sonheader i, .sonheader span {
+    margin-left: 0.5rem; }
+  .sonheader i {
+    float: left;
+    cursor: pointer;
+    font-size: 38px;
+    font-size: 1.9rem;
+    color: #18b3cf; }
+  .sonheader span {
+    float: left;
+    margin-top: -0.1rem;
+    font-size: 28px;
+    font-size: 1.4rem;
+    color: #595959; }
+
+.soninput {
+  width: 27.35rem;
+  margin: 0 auto;
+  padding-top: 4.2rem; }
+  .soninput .phone, .soninput .psd {
+    height: 2.8rem;
+    border-bottom: 1px solid #d7d7d7; }
+    .soninput .phone input, .soninput .psd input {
+      width: 90%;
+      height: 100%;
+      font-size: 25px;
+      font-size: 1.25rem;
+      color: #000; }
+  .soninput .psd {
+    margin-top: 2.7rem; }
+    .soninput .psd i {
+      cursor: pointer;
+      display: none; }
+  .soninput .yes {
+    margin-top: 1rem; }
+    .soninput .yes label {
+      cursor: pointer; }
+    .soninput .yes a {
+      font-size: 25px;
+      font-size: 1.25rem;
+      color: #f7b082; }
+  .soninput button {
+    display: block;
+    width: 15rem;
+    height: 3.65rem;
+    margin: 5rem auto 0;
+    border-radius: 2rem;
+    -o-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    background: #d8d8d8; }
+    .soninput button a {
+      font-size: 30px;
+      font-size: 1.5rem;
+      color: #fff; }
+
+.fixed {
+  width: 15rem;
+  height: 3rem;
+  line-height: 3rem;
+  background: rgba(102, 102, 102, 0.7);
+  text-align: center;
+  font-size: 24px;
+  font-size: 1.2rem;
+  color: #fff;
+  border-radius: 1rem;
+  -o-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  position: fixed;
+  top: 400px;
+  left: 50%;
+  z-index: 20;
+  margin-left: -7.5rem;
+  display: none; }
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10; }
+  header nav {
+    height: 4.8rem; }
+    header nav .logo {
+      width: 12.4rem;
+      float: left; }
+    header nav .city {
+      float: right;
+      line-height: 4.8rem;
+      margin-right: 0.8rem; }
+      header nav .city span {
+        float: left;
+        font-size: 24px;
+        font-size: 1.2rem;
+        color: #595959; }
+      header nav .city i {
+        float: right;
+        font-size: 40px;
+        font-size: 2rem;
+        color: deepskyblue;
+        margin-top: -0.2rem; }
+  header menu {
+    width: 100%;
+    height: 3.1rem;
+    display: flex;
+    display: -ms-flex;
+    display: -webkit-flex;
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+    align-items: center;
+    -webkit-align-items: center; }
+    header menu li {
+      width: 4.8rem;
+      font-size: 24px;
+      font-size: 1.2rem;
+      color: #595959; }
+
+.info {
+  height: 8.26rem; }
+
+.ppt {
+  width: 100%;
+  position: relative; }
+  .ppt .allpic {
+    position: absolute;
+    top: 0;
+    left: 0; }
+    .ppt .allpic .pic {
+      float: left; }
+
+.con {
+  height: 14rem; }
+
+footer {
+  width: 100%;
+  height: 5.4rem;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0; }
+  footer menu {
+    height: 100%;
+    display: flex;
+    display: -ms-flex;
+    display: -webkit-flex;
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+    align-items: center;
+    -webkit-align-items: center; }
+    footer menu li i {
+      display: block;
+      font-size: 48px;
+      font-size: 2.4rem;
+      color: #595959; }
+    footer menu li p {
+      width: 2.4rem;
+      text-align: center;
+      font-size: 20px;
+      font-size: 1rem;
+      color: #595959; }
+
+/*# sourceMappingURL=idnex.css.map */
